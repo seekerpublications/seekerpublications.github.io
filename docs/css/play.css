@@ -32,6 +32,9 @@ section {
 /* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
 
 section.dramatis {
+  width: 60%;
+  margin: 20px auto;
+
 }
 section.play {
 }
@@ -74,6 +77,7 @@ p.prose {
 }
 
 span.character_role {
+  margin-left: 3em;
 }
 span.stage_directions_inline {
 }
