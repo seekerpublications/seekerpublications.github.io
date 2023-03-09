@@ -52,11 +52,10 @@ section {
 
 
 figure {
-  width:45%;
+ width:45%;
  margin: 0 auto;
- border: 1px solid red;
-float: right;
-margin-left: .5em;
+ float: right;
+ margin-left: .5em;
 }
 
 img {
