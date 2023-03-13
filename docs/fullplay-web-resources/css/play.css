@@ -15,82 +15,10 @@ body {
   /*your style rules go in here */
 }
 
+nav {
   /* this is where your nav list items will be */
-  nav {
-    /* display: none; */
-    background-color: rgb(240, 162, 85);
-    font-family: verdana, sans-serif;
-    font-size: 0.7rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  
-  /* we use an unordered list but we turn off the bullets and set this block as a flex box set as a column layout as the default */
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  /* we turn off the underline and set the padding and the color */
-  
-  nav ul li a {
-    text-decoration: none;
-    margin: 0.5rem 0;
-    display: block;
-    color: black;
-  }
-  
-  /* feeback for the user with a background when hovering hover */
-  
-  nav ul li:hover {
-    background-color: rgb(228, 165, 71);
-  }
-  
-  /* also change the color of the links */
-  
-  nav ul li a:hover {
-    color: white;
-  }
-  
-  /* sub menus */
-  
-  li ul li a {
-    margin: 0.3rem 0;
-    color: rgb(6, 6, 6);
-    font-size: 0.6rem;
-  }
-  
-  li.home {
-    flex: 1 0 auto;
-    text-align: center;
-    padding-left: 0px;
-    margin-right: 0;
-  }
-  
-  li ul {
-    display:none;
-  }
-  
-  nav ul li:hover ul {
-  display:flex;
-  flex-direction: column;
-  }
+}
 
-  input[type="checkbox"] {
-    display: none;
-  }
-  
-  .hamburger {
-    display: none;
-    font-size: 2rem;
-    color: white;
-  }
 section {
   border: 0;
 }
@@ -103,199 +31,62 @@ section {
 
 /* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
 
-main {
-  width:90%;
-max-width:1250px;
-margin:5px;
-margin-left: auto;
-margin-right: auto;
-background-color:rgb(6, 6, 6);
-padding: 1em 1em 1em 1em;
-}
+section.dramatis {
+  width: 60%;
+  margin: 20px auto;
 
-.heading {
-  text-align: center;
-  background-color: black;
-  color: rgb(235, 165, 59);
 }
-.dramatis {
-background-color: rgb(8, 8, 8);
-padding: 1.5em;
-}
-.play {
-background-color: azure;
+section.play {
 }
 figure {
-
 }
 
 img {
-margin: 1.2em auto;
-display: block;
 }
-.act-image-caption {
-text-align: center;
-text-decoration: underline;
-font-style: italic;
+h1.act {
 }
-
-.act {
-text-align: center;
-background-color: rgb(240, 162, 85);
+p.character {
 }
-.character {
-margin-left: 1.5em;
+p.charactername {
 }
-.charactername {
-text-align:left;
-background-color:azure;
-padding: 0.35em;
-padding-left: 1.5em;
-}
-.dramatishead {
-text-align:center;
-font-size: larger;
-list-style-type: none;
-background-color: rgb(240, 162, 85);
+h1.dramatishead {
 }
 
-.location, .play_location {
-font-style: italic;
-font-size: 1.3em;
-background-color: azure;
-padding-left: 1.5em;
+h2.location {
+}
+p.play_location {
+}
+p.prose {
 }
 
-.scene, .firstscene {
-text-align: center;
-background-color: black;
-color:rgb(240, 162, 85);
+h2.firstscene {
 }
-.song {
 
+h2.scene {
 }
-.stagedirection {
-font-size: 1.5em;
-text-align: center;
+p.song {
+}
+h2.stagedirection {
 }
 .verseline {
   margin: 0 0 0.4em 8em;
 }
 
-.prose {
+p.prose {
   margin: 0 0 0.4em 8em;
 }
 
-.character_role {
-font-style: italic;
+span.character_role {
+  margin-left: 3em;
 }
-.stage_directions_inline {
-font-style: italic;
-}
-
-/* when the screen is wider than 700px */
-
-@media screen and (min-width: 580px) {
-  
-  html {
-  scroll-padding-top: 64px;
-}
-  body {
-    font-size: 1rem;
-  }
+span.stage_directions_inline {
 }
 
-/* when the screen is wider than 700px */
-
-@media screen and (min-width: 700px) {
-  body {
-    padding-top: 25px;
-  }
-
-/*   h1 a,
-  h2 a {
-    position: absolute;
-    top: -28px;
-  } */
-
-  li.home {
-    text-align: left;
-    padding-left: 3rem;
-    margin-right: 3rem;
-    flex: 4 1 100px;
-    align-self: flex-start;
-  }
-
-  /* when the screen is wide set the direction of the flex items to be in a row */
-
-  nav ul {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  /* the main items have a disired width of 6rem  */
-
-  nav ul li {
-    flex: 0 1 6.5rem;
-  }
-
-  nav ul li ul li {
-    flex: 0 0 2rem;
-  }
-
-  li ul li a {
-    padding: 0.3rem 0;
-    /* font-size: .8rem; */
-  }
-
-  li ul {
-    display: none;
-    /* text-align:center; */
-    position: absolute;
-    background-color: rgba(156, 91, 38, 0.829);
-    width: 6.5rem;
-  }
-
-  /* make the width of the sub items the same as the width of the main items */
-  li ul li {
-    width: 6.5rem;
-  }
-
-  nav ul li:hover ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  nav ul li.home:hover {
-    background: none;
-  }
-
-  nav ul li.home:hover a {
-    color: rgb(85, 26, 187);
-    text-decoration: underline;
-  }
-
+.character_beforespeech {
+  display: block;
+  position: relative;
+  left: -8em;
+  top: 1em;
+  /* font-size: 1.1em; */
+  width: 4em;
 }
-
-@media screen and (max-width: 900px) {
-  .hamburger {
-    display: block;
-    float: right;
-    cursor: pointer;
-  }
-
-  /*   but we also need to hide the menu until that hamburger is clicked */
-
-  nav ul {
-    display: none;
-  }
-
-  /*when the hamburger is clicked the ul below it will be made to show */
-  /*  the tilda ~ points to the next sibling selector */
-
-  input[type="checkbox"]:checked ~ ul {
-    display: block;
-  }
-}
-
