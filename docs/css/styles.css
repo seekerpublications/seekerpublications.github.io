@@ -46,6 +46,10 @@ background-color: rgb(248, 242, 235);
 padding: 1em 1em 0 1em;
 }
 
+video {
+  width:100%;
+}
+
 section {
   border: 0;
 }
